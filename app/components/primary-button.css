@@ -1,0 +1,9 @@
+/* styles we want to be harder to override */
+.primary-button {
+  background-color: lightblue;
+}
+
+/* styles we want to be easy to override */
+:where(.primary-button) {
+  padding: 10px 25px;
+}

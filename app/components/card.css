@@ -1,0 +1,19 @@
+.card {
+  border-radius: 10px;
+  padding: 10px;
+  max-width: 400px;
+  box-shadow: 1px 1px 5px 0 rgb(0 0 0 / 30%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card [data-button] {
+  border: 1px grey solid;
+  border-radius: 5px;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: purple;
+}

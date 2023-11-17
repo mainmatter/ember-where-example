@@ -1,0 +1,32 @@
+{{page-title "Ember :where() example"}}
+
+<strong>Unstyled buttons</strong>
+<Button>
+  Unstyled button
+</Button>
+<Button @loading={{true}}>
+  Unstyled loading button
+</Button>
+<hr>
+<strong>Primary buttons</strong>
+<PrimaryButton>
+  Primary button
+</PrimaryButton>
+<PrimaryButton @loading={{true}}>
+  Primary loading button
+</PrimaryButton>
+<hr>
+
+<Card>
+  <:title>
+    <h1>Card title</h1>
+  </:title>
+  <:content>
+    <p>
+      We can easily override the styles for the buttons within the Card component to add a border, update the border-radius, and modify the padding.
+    </p>
+    <p>
+      However, trying to update the background-color of the PrimaryButton component isn't as simple. That's due to how :where() has been used.
+    </p>
+  </:content>
+</Card>

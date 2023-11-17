@@ -1,0 +1,19 @@
+.button[type="button"] {
+  /* styles that we don't want to easily override */
+  user-select: none;
+  cursor: pointer;
+}
+
+.button[data-loading] {
+  pointer-events: none;
+  background-color: gray;
+}
+
+:where(.button) {
+  /* remove all browser styling */
+  all: unset;
+
+  /* set our own styles that can be easily overriden */
+  padding: 5px;
+  border-radius: 2px;
+}
